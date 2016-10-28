@@ -1,0 +1,8 @@
+{"file":"other_btn.png","frames":{
+"btn_choose1_png":{"x":0,"y":0,"w":360,"h":75,"offX":0,"offY":0,"sourceW":360,"sourceH":75},
+"btn_choose2_png":{"x":362,"y":0,"w":360,"h":75,"offX":0,"offY":0,"sourceW":360,"sourceH":75},
+"btn_down_png":{"x":0,"y":77,"w":640,"h":19,"offX":0,"offY":0,"sourceW":640,"sourceH":19},
+"btn_jia_png":{"x":944,"y":0,"w":54,"h":54,"offX":0,"offY":0,"sourceW":54,"sourceH":54},
+"btn_jian_png":{"x":888,"y":0,"w":54,"h":54,"offX":0,"offY":0,"sourceW":54,"sourceH":54},
+"btn_kline_jia_png":{"x":724,"y":0,"w":80,"h":80,"offX":0,"offY":0,"sourceW":80,"sourceH":80},
+"btn_kline_jian_png":{"x":806,"y":0,"w":80,"h":80,"offX":0,"offY":0,"sourceW":80,"sourceH":80}}}

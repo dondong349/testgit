@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Item_HistorySkin" width="604" height="224" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+<e:Image source="back_box3_png" x="0" scale9Grid="8,5,15,20" width="604" height="154" y="70"/>
+<e:Label id="txt_shouyi" y="96" height="25" text="89%" fontFamily="微软雅黑" width="107" size="23" verticalAlign="middle" x="297" textColor="0x999999"/>
+	<e:Label id="txt_name" y="21" textColor="0x1A1A1A" size="25" text="第225期" fontFamily="微软雅黑" width="194" height="27" verticalAlign="middle" textAlign="center" x="205"/>
+	<e:Label y="95" height="27" text="角色:" fontFamily="微软雅黑" id="txt_touxian0" width="71" size="25" verticalAlign="middle" x="20" textColor="0x50B2DF" textAlign="right"/>
+	<e:Component x="110" y="86" skinName="Com_RoleTyp_DaSkin" id="com_type"/>
+	<e:Label y="95" textColor="0x50B2DF" height="27" text="收益:" fontFamily="微软雅黑" id="txt_touxian1" width="71" size="25" verticalAlign="middle" x="216" textAlign="right"/>
+	<e:Label y="95" textColor="0x50B2DF" size="25" text="积分:" fontFamily="微软雅黑" x="426" width="71" height="27" verticalAlign="middle" id="txt_touxian2" textAlign="right"/>
+	<e:Label y="168" textColor="0x50B2DF" height="27" text="猎杀:" fontFamily="微软雅黑" id="txt_touxian3" width="71" size="25" verticalAlign="middle" x="20" textAlign="right"/>
+	<e:Label y="168" textColor="0x50B2DF" size="25" text="PK:" fontFamily="微软雅黑" x="216" width="71" height="27" verticalAlign="middle" id="txt_touxian4" textAlign="right"/>
+	<e:Label y="168" textColor="0x50B2DF" size="25" text="被跟随:" fontFamily="微软雅黑" x="404" width="93" height="27" verticalAlign="middle" id="txt_touxian5" textAlign="right"/>
+	<e:Label id="txt_jifen" y="96" textColor="0x999999" height="25" text="885" fontFamily="微软雅黑" width="66" size="23" verticalAlign="middle" x="512"/>
+	<e:Label id="txt_gensui" y="169" textColor="0x999999" size="23" fontFamily="微软雅黑" x="514" width="80" height="25" verticalAlign="middle"/>
+	<e:Label id="txt_pk" y="169" textColor="0x999999" height="25" text="21" fontFamily="微软雅黑" width="66" size="23" verticalAlign="middle" x="298"/>
+	<e:Label id="txt_liesha" y="169" textColor="0x999999" size="23" text="21" fontFamily="微软雅黑" x="111" width="66" height="25" verticalAlign="middle"/>
+</e:Skin>

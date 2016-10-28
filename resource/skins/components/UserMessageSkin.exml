@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="UserMessageSkin" width="360" height="270" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Group x="0" y="0">
+		<e:Rect width="360" y="0" fillColor="0xF0F0F0" height="270" x="0"/>
+		<e:Label y="143" textColor="0x1A1A1A" size="20" text="资产：" fontFamily="微软雅黑" height="22" x="24"/>
+		<e:Label y="181" textColor="0x1A1A1A" size="20" text="持仓：" fontFamily="微软雅黑" height="22" x="24"/>
+		<e:Label y="219" textColor="0x1A1A1A" height="22" text="可做多：" fontFamily="微软雅黑" size="20" x="23"/>
+		<e:Label y="55" textColor="0x1A1A1A" size="24" text="盈利：" fontFamily="微软雅黑" height="26" x="146"/>
+		<e:Label y="143" textColor="0x1A1A1A" size="20" text="现金：" fontFamily="微软雅黑" height="22" x="194"/>
+		<e:Label y="181" textColor="0x1A1A1A" size="20" text="持仓价：" fontFamily="微软雅黑" height="22" x="194"/>
+		<e:Label y="219" textColor="0x1A1A1A" height="22" text="可做空：" fontFamily="微软雅黑" size="20" x="193"/>
+	</e:Group>
+	<e:Label id="txt_yingli_add" y="87" textColor="0x50B2DF" height="20" text="+2.6%" fontFamily="微软雅黑" size="18" x="214"/>
+	<e:Label id="txt_yinli" y="52" height="32" text="25%" fontFamily="微软雅黑" size="30" x="214" textColor="0xEE0B3C"/>
+	<ns1:Head id="head" skinName="HeadSkin" currentState="Arena" scaleX="0.83" scaleY="0.83" y="18" x="20"/>
+	<e:Component id="com_type" skinName="Com_RoleTypeSkin" y="93" x="117"/>
+	<e:Label id="txt_zichan" y="143" textColor="0x1A1A1A" size="20" text="11000W" fontFamily="微软雅黑" width="106" height="22" x="87"/>
+	<e:Label id="txt_chicang" y="181" textColor="0x3ECE41" height="22" text="145手" fontFamily="微软雅黑" width="106" size="20" x="84"/>
+	<e:Label id="txt_zuiduokezuo" y="219" textColor="0x1A1A1A" size="20" text="1100手" fontFamily="微软雅黑" width="87" height="22" x="100"/>
+	<e:Label id="txt_xianjin" y="143" textColor="0x1A1A1A" size="20" text="11000W" fontFamily="微软雅黑" width="95" height="22" x="257"/>
+	<e:Label id="txt_chicangjia" y="181" textColor="0x1A1A1A" height="22" text="145手" fontFamily="微软雅黑" width="80" size="20" x="274"/>
+	<e:Label id="txt_kezuokong" y="219" textColor="0x1A1A1A" size="20" text="1000手" fontFamily="微软雅黑" width="85" height="22" x="270"/>
+</e:Skin>

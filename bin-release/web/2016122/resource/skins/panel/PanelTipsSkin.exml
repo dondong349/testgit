@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PanelTipsSkin" width="300" height="200" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="back_box1_png" x="0" y="0" scale9Grid="12,9,6,12" width="300" height="200"/>
+	<e:Button id="btn_yes" y="127" label="确定" x="96">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*">
+				<e:Image source="back_btn1_png" includeIn="disabled" x="0" y="0" scale9Grid="11,10,7,10" width="108" height="54"/>
+				<e:Image x="0" y="0" scale9Grid="11,10,8,10" width="108" includeIn="up,down" height="54" source="icon_btn7_png"/>
+				<e:Label id="labelDisplay" text="报名" size="25" fontFamily="微软雅黑" height="28" verticalAlign="middle" verticalCenter="-2" width="98" textAlign="center" horizontalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label id="txt_tips" x="19" y="16" textColor="0x323232" width="264" height="91" size="25" fontFamily="微软雅黑" bold="true" textAlign="center" verticalAlign="middle" lineSpacing="8"/>
+</e:Skin>

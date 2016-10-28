@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="DownChooseBtnSkin" width="640" height="89" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="g_btn" x="0" y="0">
+		<e:Rect height="89" width="640" x="0" y="0" fillColor="0xE4E4E4"/>
+		<e:TabBar itemRendererSkinName="TabBar_DownChooseSkin" y="1" id="tb_menu" x="0">
+			<e:layout>
+				<e:HorizontalLayout gap="1"/>
+			</e:layout>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object icon0="btn_menu1_0_png" icon1="btn_menu1_1_png"/>
+					<e:Object icon0="btn_menu2_0_png" icon1="btn_menu2_1_png"/>
+					<e:Object icon0="btn_menu3_0_png" icon1="btn_menu3_1_png"/>
+				</e:Array>
+			</e:ArrayCollection>
+		</e:TabBar>
+		<e:Rect id="rect_tips" height="25" width="25" x="575" y="15" fillColor="0xFF0000" ellipseWidth="30" visible="false"/>
+	</e:Group>
+</e:Skin>

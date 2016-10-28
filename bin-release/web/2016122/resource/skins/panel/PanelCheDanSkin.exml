@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="PanelCheDanSkin" width="450" height="500" xmlns:e="http://ns.egret.com/eui">
+	<e:Group x="0" y="0" locked="true">
+		<e:Image source="back_box1_png" y="0" scale9Grid="10,9,11,13" width="450" height="500" x="0"/>
+		<e:Label y="21" textColor="0x1B1B1B" text="当前委托" fontFamily="微软雅黑" size="25" x="175"/>
+	</e:Group>
+	<e:Button x="392" y="6" label="按钮" id="btn_close" scaleX="0.7" scaleY="0.7" locked="true">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Rect height="70" width="70" x="0" y="0" fillAlpha="0"/>
+				<e:Rect height="5" width="59" x="14" y="53" fillColor="0xCDCDCD" rotation="-45"/>
+				<e:Rect y="11" width="59" rotation="45" height="5" fillColor="0xCDCDCD" x="17"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Scroller horizontalCenter="0" skinName="ListSkin" top="80" bottom="0" id="scroller" y="10" left="0" right="0">
+		<e:List id="list" itemRendererSkinName="Item_CheDanSkin">
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object/>
+					<e:Object/>
+					<e:Object/>
+					<e:Object/>
+				</e:Array>
+			</e:ArrayCollection>
+			<e:layout>
+				<e:VerticalLayout gap="0" horizontalAlign="justify" paddingRight="0" paddingLeft="0"/>
+			</e:layout>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

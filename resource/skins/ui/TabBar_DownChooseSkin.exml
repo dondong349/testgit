@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="TabBar_DownChooseSkin" width="213" height="88" xmlns:e="http://ns.egret.com/eui" states="up,down" >
+	<e:Rect height="88" width="213" x="0" y="0" fillColor="0xFFFFFF"/>
+	<e:Image source="{data.icon1}" includeIn="down" x="0" y="0"/>
+	<e:Image source="{data.icon0}" includeIn="up" x="0" y="0"/>
+</e:Skin>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneSendMessageSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect id="rect_back" fillAlpha="0.5" left="0" right="0" top="0" bottom="0"/>
+	<e:Group horizontalCenter="0" bottom="0">
+		<e:Rect height="800" width="640" x="0" y="0" fillColor="0xEFEFEF"/>
+		<e:Rect width="580" y="70.98484848484847" fillColor="0xEFEFEF" height="131" x="30" strokeColor="0xC5C5C5" strokeWeight="2"/>
+		<e:Label id="txt_title" text="标签" x="219.99999999999997" y="21.96969696969697" textColor="0x212121" width="200" textAlign="center" fontFamily="微软雅黑"/>
+		<e:Button id="btn_exit" label="取消" x="11.96969696969697" y="15">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Rect height="50" width="90" y="0" fillAlpha="0" x="0"/>
+					<e:Label id="labelDisplay" text="标签" size="23" width="54" horizontalCenter="0" verticalCenter="0" textAlign="center" fontFamily="微软雅黑" textColor="0x212121" textColor.disabled="0xA4A4A4"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btn_send" y="15" label="发送" x="537.9545454545455">
+			<e:skinName>
+				<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+					<e:Rect height="50" width="90" y="0" fillAlpha="0" x="0"/>
+					<e:Label id="labelDisplay" text="标签" size="23" width="54" horizontalCenter="0" verticalCenter="0" textAlign="center" fontFamily="微软雅黑" textColor="0x212121" textColor.disabled="0xA4A4A4"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:EditableText id="txt_detail" width="568" height="119" x="35.984848484848484" y="76.96969696969697" textColor="0x404040" fontFamily="微软雅黑" size="25" multiline="true" lineSpacing="5"/>
+		<e:Label id="txt_tips" x="210" y="217" textColor="0x616161" size="22" textAlign="right" width="396" fontFamily="微软雅黑" height="24"/>
+	</e:Group>
+</e:Skin>

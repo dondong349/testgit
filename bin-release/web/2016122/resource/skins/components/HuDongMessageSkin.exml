@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="HuDongMessageSkin" width="279" height="270" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect width="279" y="0" fillColor="0xE6E6E6" height="270" x="0"/>
+	<e:Group id="g_detail" x="12" y="33">
+		<e:Label id="txt_yinli" y="29" height="32" text="-26%" fontFamily="微软雅黑" width="127" size="30" x="131" textColor="0x3ECE41"/>
+		<e:Label id="txt_type" y="-21" height="28" fontFamily="微软雅黑" width="56" size="25" x="186" textColor="0xEE0B3C" textAlign="right"/>
+		<e:Label id="txt_name" y="53" size="30" fontFamily="微软雅黑" x="118" width="131" height="32" textColor="0x8F8F8F"/>
+		<e:Label id="txt_yinli1" y="130" textColor="0x3ECE41" height="47" fontFamily="微软雅黑" width="224" size="45" textAlign="center" x="19"/>
+		<ns1:Head id="head" y="0" currentState="Arena" scaleX="0.6" scaleY="0.6" skinName="HeadSkin" x="2"/>
+		<e:Component id="com_type" skinName="Com_RoleTypeSkin" y="53" x="74"/>
+		<e:Group id="g_gengsui" x="0" y="130" locked="true">
+			<e:Label y="0" textColor="0x1A1A1A" size="20" text="资产：" fontFamily="微软雅黑" height="22" x="0"/>
+			<e:Label y="38" textColor="0x1A1A1A" size="20" text="持仓：" fontFamily="微软雅黑" height="22" x="0"/>
+			<e:Label id="txt_zichan" y="0" textColor="0x1A1A1A" size="20" text="42W" fontFamily="微软雅黑" width="69" height="22" x="58"/>
+			<e:Label id="txt_chicang" y="38" height="22" text="145手" fontFamily="微软雅黑" width="72" size="20" x="57" textColor="0xEE0B3C"/>
+			<e:Label y="0" textColor="0x1A1A1A" size="20" text="现金：" fontFamily="微软雅黑" height="22" x="130"/>
+			<e:Label y="38" textColor="0x1A1A1A" size="20" text="持仓价：" fontFamily="微软雅黑" height="22" x="130"/>
+			<e:Label id="txt_xianjin" y="0" textColor="0x1A1A1A" size="20" text="1100W" fontFamily="微软雅黑" width="71" height="22" x="188"/>
+			<e:Label id="txt_chicangjia" y="38" textColor="0x1A1A1A" height="22" text="8247" fontFamily="微软雅黑" width="52" size="20" x="209"/>
+		</e:Group>
+		<e:Group id="g_tiaozhan" x="5" y="140" visible="false">
+			<e:Image id="img_jindu_back1" source="back_jindutiao_png" y="0" x="0"/>
+			<e:Image id="img_jindu_back2" source="back_jindutiao_png" y="27" x="0"/>
+			<e:Rect id="rect_jindu1" height="13" width="241" x="1" y="1" fillColor="0xED98A5" ellipseWidth="12"/>
+			<e:Rect id="rect_jindu2" y="28" ellipseWidth="12" width="20" height="13" fillColor="0xED98A5" x="1"/>
+		</e:Group>
+	</e:Group>
+	<e:Component id="com_hudong_type" skinName="Com_InteractSkin" y="26" x="30" visible="false"/>
+	<e:Label id="txt_gengsui" horizontalCenter="0.5" y="197" text="7名好友更随" fontFamily="微软雅黑" size="30" x="74" locked="true" visible="false"/>
+</e:Skin>

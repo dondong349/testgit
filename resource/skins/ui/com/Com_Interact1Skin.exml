@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Com_Interact1Skin" width="219" height="219" xmlns:e="http://ns.egret.com/eui" states="hudong,gensui" >
+	<e:Image source.gensui="back_gensui_png" horizontalCenter="0" top="0" height="98" source="blue_bgd_png"/>
+	<e:Label text.hudong="互 动" y="165" fontFamily="微软雅黑" size="40" size.gensui="30" x.gensui="64" y.gensui="170" horizontalCenter="0"/>
+	<e:Image height="88" bottom="0" horizontalCenter="0" source="blue_bgd_png" scaleY="-1"/>
+	<e:Label horizontalCenter="0" y="175" size="40" fontFamily="微软雅黑" x="10"/>
+</e:Skin>

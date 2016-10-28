@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneHuDong1Skin" width="640" height="960" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect y="40" fillColor="0xF0F3F5" top="80" id="rect_back" bottom="0" width="640" horizontalCenter="0" x="40"/>
+	<e:Group id="g_top" y="0" x="0">
+		<e:Rect width="640" y="0" fillColor="0xFFFFFF" height="80" x="0"/>
+		<e:Label verticalAlign="middle" y="25" textColor="0x1A1A1A" size="28" text="玩家互动" fontFamily="微软雅黑" textAlign="center" width="192" height="30" x="223.93939393939397"/>
+		<e:Rect width="640" y="79" fillColor="0xDFDFDF" height="1" x="0"/>
+		<e:Button id="btn_exit" y="0" label="按钮" x="0">
+			<e:skinName>
+				<e:Skin states="up,down" xmlns:w="http://ns.egret.com/wing">
+					<e:Rect height="80" width="80" x="0" y="0" fillAlpha="0"/>
+					<e:Image source="icon_back_png" x="32.5" y="27.5"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Button id="btn_type" label="按钮" y="100" x="140">
+		<e:skinName>
+			<e:Skin states="up,down" xmlns:w="http://ns.egret.com/wing">
+				<e:Image source="btn_choose1_png" x="0" y="0" includeIn="down"/>
+				<e:Image source="btn_choose2_png" x="0" y="0" includeIn="up"/>
+				<e:Label text="猎杀任务" x="40" fontFamily="微软雅黑" size="25" height="27" y="24" textColor.down="0x999999"/>
+				<e:Label text="好友互动" size="25" height="27" fontFamily="微软雅黑" textColor="0x999999" x="220" y="24" textColor.down="0xFFFFFF"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:ViewStack id="viewStack" selectedIndex="0" top="190" bottom="0" left="0" right="0">
+		<e:Group>
+			<e:Rect width="640" y="0" height="543" fillAlpha="0" x="0"/>
+			<e:Group x="17.954545454545453" y="23.93939393939391">
+				<e:Image source="back_heise_png" x="0" y="0" scale9Grid="9,7,12,16" width="604" height="286" alpha="0.5"/>
+				<e:Group x="68.48484848484848" y="39.01515151515153">
+					<e:Label text="      机构可以猎杀在线散户（系统随机分配）" x="0" y="-11" size="22" fontFamily="微软雅黑" height="27"/>
+					<e:Label y="59" height="92" text="      如果猎物产生损失，猎手将按对方损失的1/10作为收益加成。造成爆仓，将获得额外积分奖励。" fontFamily="微软雅黑" size="22" x="0" width="467" lineSpacing="10"/>
+					<e:Label y="160" height="58" text="      如果猎物产生盈利，猎手将按对方盈利的1/10进行收益减成。" fontFamily="微软雅黑" lineSpacing="10" width="467" size="22" x="0"/>
+					<e:Label y="24" height="27" text="      少数大户可以围杀机构（名额先到先得）" fontFamily="微软雅黑" size="22" x="0"/>
+				</e:Group>
+			</e:Group>
+			<e:Button id="btn_lingqu" label="按钮" y="370.9848484848485" x="140">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image source="back_btn2_png" x="0" y="0" scale9Grid="11,10,8,9" width="360" height="85"/>
+						<e:Label text="领取任务" fontFamily="微软雅黑" size="25" height="27" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+		<e:Group bottom="0" top="0">
+			<e:Scroller id="scroller" skinName="ListSkin" bottom="140" top="0" horizontalCenter="0" width="640">
+				<e:List id="list" itemRendererSkinName="Item_HuDong1Skin">
+					<e:ArrayCollection>
+						<e:Array>
+							<e:Object/>
+							<e:Object/>
+							<e:Object/>
+							<e:Object/>
+						</e:Array>
+					</e:ArrayCollection>
+					<e:layout>
+						<e:VerticalLayout paddingRight="18" paddingLeft="18" gap="18" horizontalAlign="justify" paddingTop="18" paddingBottom="18"/>
+					</e:layout>
+				</e:List>
+			</e:Scroller>
+			<e:Button id="btn_addfriends" label="按钮" bottom="30" horizontalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image source="back_btn2_png" x="0" y="0" scale9Grid="11,10,8,9" width="360" height="85"/>
+						<e:Label text="添加好友" fontFamily="微软雅黑" size="25" height="27" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="txt_tips" text="暂无好友在线" y="56" textColor="0x7D7D7D" fontFamily="微软雅黑" size="35" x="215"/>
+		</e:Group>
+	</e:ViewStack>
+	<e:Button y="100" x="140" label="按钮" name="0" id="btn_type0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Rect height="75" width="180" x="0" y="0" fillAlpha="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Button y="100" id="btn_type1" label="按钮" name="1" x="320">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Rect height="75" width="180" x="0" y="0" fillAlpha="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label y="10" height="27" text="      机构可以猎杀在线散户（系统随机分配）" fontFamily="微软雅黑" size="22" x="10"/>
+</e:Skin>

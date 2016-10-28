@@ -1,0 +1,5 @@
+{"file":"start_card.png","frames":{
+"card_back_png":{"x":172,"y":202,"w":134,"h":200,"offX":18,"offY":0,"sourceW":170,"sourceH":200},
+"card_dahu_png":{"x":0,"y":202,"w":170,"h":200,"offX":0,"offY":0,"sourceW":170,"sourceH":200},
+"card_jigou_png":{"x":172,"y":0,"w":170,"h":200,"offX":0,"offY":0,"sourceW":170,"sourceH":200},
+"card_sanhu_png":{"x":0,"y":0,"w":170,"h":200,"offX":0,"offY":0,"sourceW":170,"sourceH":200}}}

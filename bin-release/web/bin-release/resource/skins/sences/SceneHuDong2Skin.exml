@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneHuDong2Skin" width="640" height="960" xmlns:e="http://ns.egret.com/eui">
+	<e:Rect id="rect_back" y="50" top="80" fillColor="0xF0F3F5" bottom="0" width="640" horizontalCenter="0" x="50"/>
+	<e:Group id="g_top" y="0" x="0">
+		<e:Rect fillColor="0xFFFFFF" width="640" y="0" height="80" x="0"/>
+		<e:Label y="25" textColor="0x1A1A1A" size="28" verticalAlign="middle" fontFamily="微软雅黑" textAlign="center" width="192" height="30" text="玩家互动" x="223.93939393939397"/>
+		<e:Rect fillColor="0xDFDFDF" width="640" y="79" height="1" x="0"/>
+		<e:Button id="btn_exit" y="0" label="按钮" x="0">
+			<e:skinName>
+				<e:Skin states="up,down" xmlns:w="http://ns.egret.com/wing">
+					<e:Rect height="80" width="80" x="0" y="0" fillAlpha="0"/>
+					<e:Image source="icon_back_png" x="32.5" y="27.5"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+	</e:Group>
+	<e:Scroller id="scroller" horizontalCenter="0" bottom="0" width="640" top="80" skinName="ListSkin">
+		<e:List id="list" itemRendererSkinName="Item_HuDong1Skin">
+			<e:layout>
+				<e:VerticalLayout paddingRight="18" gap="18" horizontalAlign="justify" paddingLeft="18" paddingBottom="18" paddingTop="18"/>
+			</e:layout>
+			<e:ArrayCollection>
+				<e:Array>
+					<e:Object/>
+					<e:Object/>
+					<e:Object/>
+					<e:Object/>
+				</e:Array>
+			</e:ArrayCollection>
+		</e:List>
+	</e:Scroller>
+</e:Skin>

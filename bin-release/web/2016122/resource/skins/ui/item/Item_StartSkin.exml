@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Item_StartSkin" width="604" height="148" xmlns:e="http://ns.egret.com/eui">
+	<e:Image source="back_box2_png" x="0" y="0" scale9Grid="6,6,18,19" width="604" height="148"/>
+	<e:Label id="txt_name" y="27" height="27" text="171期竞技场" fontFamily="微软雅黑" textAlign="left" width="263" size="25" verticalAlign="middle" x="34" textColor="0x4CB5E3"/>
+	<e:Label id="txt_date" y="67" textColor="0x959595" size="20" text="周三~周四 19:00~21:30" fontFamily="微软雅黑" textAlign="left" width="284" height="22" verticalAlign="middle" x="34"/>
+	<e:Label id="txt_detail" y="98" size="24" text="报名抽机构角色体验坐庄" fontFamily="微软雅黑" textAlign="left" width="312" height="26" verticalAlign="middle" x="34" textColor="0x616161"/>
+	<e:Button id="btn_yes" label="报名" x="382" y="36.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled" xmlns:w="http://ns.egret.com/wing">
+				<e:Image source="back_btn1_png" includeIn="disabled" x="0" y="0" scale9Grid="11,10,7,10" width="195" height="75"/>
+				<e:Image source="back_btn2_png" x="0" y="0" scale9Grid="11,10,8,10" width="195" includeIn="up,down" height="75"/>
+	<e:Label id="labelDisplay" text="报名" size="25" fontFamily="微软雅黑" height="27" verticalAlign="middle" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>

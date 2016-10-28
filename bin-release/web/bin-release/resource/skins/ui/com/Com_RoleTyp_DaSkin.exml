@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Com_RoleTyp_DaSkin" width="45" height="45" xmlns:e="http://ns.egret.com/eui" states="1,2,3" >
+	<e:Image source="icon_dahu_da_png" includeIn="2" x="0" y="0"/>
+	<e:Image source="icon_sanhu_da_png" includeIn="1" x="0" y="0"/>
+	<e:Image source="icon_jigou_da_png" includeIn="3" x="0" y="0"/>
+</e:Skin>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="KLineSkin" width="7" height="70" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="1,2" >
+	<e:Rect id="rect_box" height="30" y="20" fillAlpha="0" strokeWeight="0.5" strokeColor="0xF5576D" fillAlpha.2="1" fillColor.2="0x24E487" strokeWeight.2="0" left="0" right="0"/>
+	<e:Rect id="rect_up" height="20" width="0.5" horizontalCenter="0" strokeWeight="0" fillColor="0xF5576D" top="0" fillColor.2="0x24E487"/>
+	<e:Rect id="rect_down" width="0.5" height="20" bottom="0" horizontalCenter="0" fillColor="0xF5576D" fillColor.2="0x24E487"/>
+</e:Skin>

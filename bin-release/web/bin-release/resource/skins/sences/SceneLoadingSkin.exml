@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="SceneLoadingSkin" width="640" height="960" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Rect left="0" right="0" top="0" bottom="0" fillAlpha="1" fillColor="0x414141"/>
+	<e:Component id="com_loading" width="0" height="0" horizontalCenter="0" verticalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image source="icon_loading_png" scaleX="0.5" scaleY="0.5" x="-54.5" y="-54.5"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Component>
+	<e:Label id="txt_progress" text="100%" textColor="0x5CC0FE" size="20" width="56" textAlign="center" horizontalCenter="0" verticalCenter="0"/>
+</e:Skin>

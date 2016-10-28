@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="Item_RankingSkin" width="604" height="100" xmlns:e="http://ns.egret.com/eui" xmlns:ns1="*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="back_box3_png" x="0" y="0" scale9Grid="8,5,15,20" width="604" height="100"/>
+	<e:Label id="txt_name" text="仗剑走天涯" x="95" y="36.75" textColor="0x989898" fontFamily="微软雅黑" size="25" height="27" verticalAlign="middle" width="132"/>
+	<e:Label id="txt_duanwei" y="36.75" size="25" text="职业六段" fontFamily="微软雅黑" width="107" height="27" verticalAlign="middle" x="236" textColor="0x1A1A1A"/>
+	<e:Label id="txt_touxian" y="36.75" height="27" text="出类拔萃" fontFamily="微软雅黑" width="105" size="25" verticalAlign="middle" x="351" textColor="0x999999"/>
+	<ns1:Head id="head" x="17" y="17.5" skinName="HeadSkin" currentState="Ranking"/>
+	<e:Label id="txt_jifen_title" text="积分" x="488" y="16" textColor="0x4CB5E3" fontFamily="微软雅黑" size="25" width="91" textAlign="center"/>
+	<e:Label id="txt_jifen" y="57" textColor="0x959595" size="20" text="234" fontFamily="微软雅黑" textAlign="center" width="85" height="22" verticalAlign="middle" x="491"/>
+	<e:Image id="img_point" source="icon_point_hong_png" x="62" y="11" scaleX="0.8" scaleY="0.8"/>
+	<e:Label id="txt_num" text="12" x="62" y="16" fontFamily="Arial" size="17" bold="true" height="16" width="22" textAlign="center"/>
+</e:Skin>
