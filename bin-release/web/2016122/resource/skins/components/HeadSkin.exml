@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="HeadSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="Start,Arena,Ranking"  width.Start="120" height.Start="120" width.Ranking="65" height.Ranking="65">
-	<e:Image id="img_back" source="back_head1_png" x="0" y="0" source.Arena="back_head2_png" source.Ranking="icon_head_png" locked="true"/>
-	<e:Image id="img_head" height="120" width="120" x="0" y="0" width.Ranking="65" height.Ranking="65"/>
-	<e:Image id="img_mask" source="mask_head_png" x="5" y="5" width.Arena="114" x.Arena="3" y.Arena="3" height.Arena="114" width.Ranking="65" height.Ranking="65" y.Ranking="0" x.Ranking="0" visible.Ranking="false" visible.Start="false" visible="false"/>
-</e:Skin>

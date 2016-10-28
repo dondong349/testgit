@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="TabBar_TypeSkin" width="106" height="65" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="up,down" >
-	<e:Label fontFamily="微软雅黑" width="101" textAlign="center" horizontalCenter="0" verticalCenter="0" height="27" textColor="0x1A1A1A" size="25" text="{data.typename1}" includeIn="up"/>
-	<e:Label fontFamily="微软雅黑" width="101" textAlign="center" horizontalCenter="0" verticalCenter="0" height="27" size="25" textColor="0x49BECB" text="{data.typename2}" includeIn="down"/>
-	<e:Rect height="2" width="90" includeIn="down" bottom="-1" horizontalCenter="0" fillColor="0x49BECB"/>
-</e:Skin>

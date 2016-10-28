@@ -1,4 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="ChatMessageSkin" width="604" height="35" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
-	<e:Label id="txt_detail" y="5" textColor="0x999999" fontFamily="微软雅黑" width="580" size="22" lineSpacing="3" x="12"/>
-</e:Skin>
