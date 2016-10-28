@@ -372,6 +372,26 @@
 					"isFolder":false,
 					"key":"start_icon_json",
 					"name":"start_icon_json"
+				},
+				{
+					"isFolder":false,
+					"key":"blue_bgd_png",
+					"name":"blue_bgd_png"
+				},
+				{
+					"isFolder":false,
+					"key":"goupPeople_png",
+					"name":"goupPeople_png"
+				},
+				{
+					"isFolder":false,
+					"key":"oldMan_png",
+					"name":"oldMan_png"
+				},
+				{
+					"isFolder":false,
+					"key":"vArrow_png",
+					"name":"vArrow_png"
 				}
 			]
 		}

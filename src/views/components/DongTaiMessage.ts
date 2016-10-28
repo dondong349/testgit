@@ -306,7 +306,8 @@ class DongTaiMessage extends eui.Component {
         
         //显示界面
         this.fenshi = new egret.Shape();
-        this.fenshi.graphics.lineStyle(0.5,0x4584f4);
+        //this.fenshi.graphics.lineStyle(0.5,0x4584f4);
+        this.fenshi.graphics.lineStyle(1,0x4584f4);
         for(var i: number = 0;i < this.KLineData.length;i++) {
             //定义变量
             var now_x:number;

@@ -22,6 +22,8 @@ class Https {
         _url = this.root + url;
         _url += "?v=" + Math.random().toString();
         _url += "&" + basic.Utils.obj2query(params);
+        if(window["access_token"]) _url += "&" + window["access_token"];
+        
         console.log(_url);
         //链接数据
         var request = new egret.HttpRequest();

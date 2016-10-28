@@ -4,7 +4,7 @@
 	<e:Group id="scrollG" x="18" y="16" height="220">
 		<e:Image source="back_box2_png" scale9Grid="6,5,19,19" width="100%" height="100%" horizontalCenter="0" top="0"/>
 		<e:Label textColor="0x50B2DF" text="信息大厅" fontFamily="微软雅黑" size="30" x="19" width="128" top="15"/>
-		<e:Label id="tipToggle" text="展开" fontFamily="微软雅黑" touchEnabled="true" size="30" top="12" y="10" horizontalCenter="-0.5" width="581" textAlign="center" verticalAlign="middle" textColor="0xA5A5A5"/>
+		<e:Label id="tipToggle" text="收起" fontFamily="微软雅黑" touchEnabled="true" size="30" top="12" y="10" horizontalCenter="-0.5" width="581" textAlign="center" verticalAlign="middle" textColor="0xA5A5A5"/>
 		<e:Button id="btn_letter" label="按钮" x="544" top="0">
 			<e:skinName>
 				<e:Skin states="up,down,disabled">
@@ -21,7 +21,7 @@
 				</e:layout>
 			</e:Group>
 		</e:Scroller>
-		<e:Image id="vArrow" source="vArrow_png" x="244" y="7" touchEnabled="false"/>
+		<e:Image id="vArrow" x="250" y="27" width="22" height="34" touchEnabled="false" rotation="90" anchorOffsetX="11" anchorOffsetY="17" source="vArrow_png"/>
 	</e:Group>
 	<e:Group id="btnsG" x="100" y="245.98484848484847">
 		<e:Group x="47" y="0">

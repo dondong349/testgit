@@ -29,6 +29,7 @@ class CaoZuoXinXiFace extends eui.Component {
     private tipToggle:eui.Label;
     private scrollG: eui.Group;
     private btnsG: eui.Group;
+    private vArrow:eui.Image;
     
     //定义变量
     private timer_change: basic.Timer = null;
@@ -498,7 +499,9 @@ class CaoZuoXinXiFace extends eui.Component {
             this.btn_huifu.y = 150;
             this.btn_chuli.y = 150;
             this.g_send.visible = false;
-            this.tipToggle.text = "收起";
+            this.tipToggle.text = "展开";
+            this.vArrow.rotation = -90;
+            
             this.scroller.bottom = 0;
         } else {
             this.scrollG.height = 220;
@@ -506,7 +509,8 @@ class CaoZuoXinXiFace extends eui.Component {
             this.btn_huifu.y = 270;
             this.btn_chuli.y = 270;
             this.g_send.visible = true;
-            this.tipToggle.text = "展开";
+            this.tipToggle.text = "收起";
+            this.vArrow.rotation = 90;
             this.scroller.bottom = 38;
         } 
         this.messIsOpen = !this.messIsOpen;
