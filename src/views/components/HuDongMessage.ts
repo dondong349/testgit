@@ -22,12 +22,15 @@ class HuDongMessage extends eui.Component {
     private g_gengsui: eui.Group;
     private g_tiaozhan: eui.Group;
     private txt_type: eui.Label;
+    private txt_cancel: eui.Label;
     private now_showhead: string = "";
     private txt_name: eui.Label;
     private txt_yinli1: eui.Label;
+    private redBall:eui.Image;
     
     //数据变量
     private hudong_type:number;
+    private data;
     
     //初始化
     createChildren(): void {
@@ -35,18 +38,20 @@ class HuDongMessage extends eui.Component {
         
         //定义按钮
         this.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onShowHuDong,this);
+        this.txt_cancel.addEventListener(egret.TouchEvent.TOUCH_TAP,this.cancelGenSui,this);
     }
     
     //显示界面
     public show(_type:number,_hudong_type:number,_data:any):void{
         //数据赋值
         this.hudong_type = _hudong_type;
+        this.data = _data;
         
         //清除文本
         this.txt_name.text = "";
         this.txt_yinli.text = "";
         this.txt_yinli1.text = "";
-        
+        this.txt_cancel.visible = false;
         //判断显示界面
         if(_hudong_type == 0) {
             //显示界面
@@ -78,7 +83,7 @@ class HuDongMessage extends eui.Component {
             }
             
             //显示类型
-            if(_data.auctionrole == "RETAIL") {
+            if(_data.auctionrole == "RETAIL") { //sanhu
                 this.com_type.currentState = "1";
             }
             else if(_data.auctionrole == "BIGRETAIL") {
@@ -110,7 +115,9 @@ class HuDongMessage extends eui.Component {
             //显示血条
             this.g_tiaozhan.visible = false;
             this.g_gengsui.visible = false;
+
             this.txt_type.text = "PK";
+            this.txt_cancel.visible = true;
             
             //显示宽度
             this.rect_jindu1.width = 241 * Math.min(1,_data.volume / _data.initialcurrentvolume);
@@ -152,6 +159,7 @@ class HuDongMessage extends eui.Component {
             this.g_gengsui.visible = true;
             this.g_tiaozhan.visible = false;
             this.txt_type.text = "跟随";
+            this.txt_cancel.visible = true;
             
             //显示文本
             if(_data.income != undefined) {
@@ -249,6 +257,7 @@ class HuDongMessage extends eui.Component {
             this.g_gengsui.visible = true;
             this.g_tiaozhan.visible = true;
             this.txt_type.text = "猎杀";
+            this.txt_cancel.visible = true;
             
             //显示文本
             if(_data.income != undefined) {
@@ -302,6 +311,12 @@ class HuDongMessage extends eui.Component {
             //显示宽度
             this.rect_jindu1.width = 241 * Math.min(1,_data.volume / _data.initialcurrentvolume);
             this.rect_jindu2.width = 241 * Math.min(1,Math.max(0,((_data.volume / _data.initialcurrentvolume) - 1)));
+        } 
+        else if(_hudong_type == 6){
+            this.com_hudong_type.currentState = "caolian";
+            //sanhu
+            if(_data.auctionrole == "RETAIL") this.com_hudong_type.setRedBallShow();
+            else this.com_hudong_type.setRedBallHide();
         }
     }
     
@@ -325,6 +340,26 @@ class HuDongMessage extends eui.Component {
             
             //显示更随好友列表
             PanelGenSui.instance.show();
+        }
+    }
+    public setRedBallShow(){
+        this.redBall.visible = false;
+    }
+    public setRedBallHide(){
+        this.redBall.visible = false;
+    }
+    private cancelGenSui(e:egret.Event){
+        if([1,2,4,5,6].indexOf(this.hudong_type) > -1){ //gensui
+            Api.instance.up_game_cancelTask((response: any) => {
+                //判断显示
+                if(response.success == true) {
+                    //显示按钮
+                    this.txt_cancel.visible = false;
+                    this.txt_type.text = "";
+                } else {
+                    PanelTips.instance.show(response.code);
+                }
+            });
         }
     }
     

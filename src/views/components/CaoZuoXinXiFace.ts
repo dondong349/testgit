@@ -157,7 +157,8 @@ class CaoZuoXinXiFace extends eui.Component {
                 this.scroller.height = 170-35;
                 
                 //显示文本
-                this.txt_type.text = "欺骗猎物";
+                //this.txt_type.text = "欺骗猎物";
+                this.txt_type.text = "机构沟通";
                 this.rect_type.fillColor = 0xF5576D;
             }
             else if(this.send_type == 1) {

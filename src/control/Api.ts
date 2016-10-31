@@ -26,7 +26,7 @@ class Api {
         var url: string = "/trade/sys/account/getAccount";
         
         //数据赋值
-        params["accountId"] = "184d77be4b63426e994f3f98be6c4221";// UserData.User_Id;
+        params["accountId"] =  UserData.User_Id;
         
         //获取数据
         Https.getData(url,params,(response: any) => {
@@ -609,5 +609,19 @@ class Api {
         });
     };
     
-    
+    //取消互动
+    up_game_cancelTask(_callback: Function): void {
+        //定义变量
+        var params: any = {};
+        var url: string = "/trade/sys/auction/cancelTask";
+        
+        //数据赋值
+        params["code"] = UserData.User_Code;
+        
+        //获取数据
+        Https.getData(url,params,(response: any) => {
+            //显示回调函数
+            _callback(response);
+        });
+    };
 }

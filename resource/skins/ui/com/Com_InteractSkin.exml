@@ -1,5 +1,23 @@
 <?xml version='1.0' encoding='utf-8'?>
-<e:Skin class="Com_InteractSkin" width="219" height="219" xmlns:e="http://ns.egret.com/eui" states="hudong,gensui" >
-	<e:Image source="back_hudong_png" x="0" y="0" source.gensui="back_gensui_png"/>
-	<e:Label text.hudong="互 动" y="165" fontFamily="微软雅黑" size="40" size.gensui="30" x.gensui="64" y.gensui="170" horizontalCenter="0"/>
+<e:Skin class="Com_InteractSkin" width="219" height="219" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" states="hudong,gensui,caolian" >
+	<e:Image source="oldMan_png" includeIn="caolian" x="11" y="18" width="103" height="184"/>
+	<e:Button id="returnBtn" label="返回" includeIn="caolian" x="129" y="152" width="77" height="36">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="back_baise_png" source.down="back_baise_png" scale9Grid="7,6,17,18" />
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" textColor="0x000000"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Label text="智能股圣" includeIn="caolian" x="135" y="45" width="74" height="64" textColor="0xFF0000"/>
+	<e:Image source="back_hudong_png" x="0" y="0" source.gensui="back_gensui_png" includeIn="hudong,gensui" visible.hudong="false"/>
+	<e:Label text.hudong="互 动" y="165" fontFamily="微软雅黑" size="40" size.gensui="30" x.gensui="64" y.gensui="170" horizontalCenter="0" visible.hudong="false" includeIn="gensui"/>
+	<e:Image id="caolian" horizontalCenter="0" top="0" height="98" source="blue_bgd_png" touchEnabled="true" includeIn="hudong"/>	
+	<e:Image id="hudong" height="88" bottom="0" horizontalCenter="0" source="blue_bgd_png" scaleY="-1" touchEnabled="true" includeIn="hudong"/>
+	<e:Image source="goupPeople_png" x="24" y="148" width="56" height="44" touchEnabled="false" includeIn="hudong"/>
+	<e:Image source="oldMan_png" x="31" y="9" width="39" height="69" touchEnabled="false" includeIn="hudong"/>
+	<e:Label text="操练" y="25" fontFamily="微软雅黑" size="40" horizontalCenter="28.5" touchEnabled="false" includeIn="hudong"/>
+	<e:Label horizontalCenter="27.5" y="151" size="40" fontFamily="微软雅黑" x="10" text="互动" touchEnabled="false" includeIn="hudong"/>
+	<e:Image id="redBall" source="icon_point_png" x="199" y="82" width="22" height="22" touchEnabled="false" includeIn="hudong"/>
+	
 </e:Skin>

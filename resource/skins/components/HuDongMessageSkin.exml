@@ -4,6 +4,7 @@
 	<e:Group id="g_detail" x="12" y="33">
 		<e:Label id="txt_yinli" y="29" height="32" text="-26%" fontFamily="微软雅黑" width="127" size="30" x="131" textColor="0x3ECE41"/>
 		<e:Label id="txt_type" y="-21" height="28" fontFamily="微软雅黑" width="56" size="25" x="186" textColor="0xEE0B3C" textAlign="right"/>
+		<e:Label id="txt_cancel" text="取消" x="121" y="-21" scaleX="1" scaleY="1" width="56" height="28" size="25" textColor="0x3db2be" touchEnabled="true" visible="false"/>
 		<e:Label id="txt_name" y="53" size="30" fontFamily="微软雅黑" x="118" width="131" height="32" textColor="0x8F8F8F"/>
 		<e:Label id="txt_yinli1" y="130" textColor="0x3ECE41" height="47" fontFamily="微软雅黑" width="224" size="45" textAlign="center" x="19"/>
 		<ns1:Head id="head" y="0" currentState="Arena" scaleX="0.6" scaleY="0.6" skinName="HeadSkin" x="2"/>
@@ -25,6 +26,6 @@
 			<e:Rect id="rect_jindu2" y="28" ellipseWidth="12" width="20" height="13" fillColor="0xED98A5" x="1"/>
 		</e:Group>
 	</e:Group>
-	<e:Component id="com_hudong_type" skinName="Com_InteractSkin" y="26" x="30" visible="false"/>
-	<e:Label id="txt_gengsui" horizontalCenter="0.5" y="197" text="7名好友更随" fontFamily="微软雅黑" size="30" x="74" locked="true" visible="false"/>
+	<e:Component id="com_hudong_type" y="26" x="30" skinName="Com_Interact1Skin" visible="false"/>
+	<e:Label id="txt_gengsui" horizontalCenter="0.5" y="197" text="7名好友更随" fontFamily="微软雅黑" size="30" x="74" visible="false"/>
 </e:Skin>

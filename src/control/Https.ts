@@ -10,7 +10,7 @@ class Https {
     //初始化
     public static init():void{
         //数据赋值
-        this.root = "http://www.dae.pw:8080/wsdsp-wx/"; //http://www.dae.pw/
+        this.root = "http://www.dae.pw/"; //http://www.dae.pw:8080/wsdsp-wx/
     }
     
     //获取数据

@@ -147,32 +147,37 @@ class SceneArena extends basic.SceneBase {
                 this.buy_data = response.data.buyList;
                 this.sell_data = response.data.sellList;
                 this.now_price = response.data.lastPrice;
-                
-                //判断互动类型
-                if(this.user_data.preycode == undefined) {
-                    //没有互动
-                    hudong_type = 0;
+                //判断是否是智能股圣
+                if(this.user_data.model && this.user_data.model ===1){
+                    hudong_type = 6; //智能股圣
+                } else {
+                    //判断互动类型
+                    if(this.user_data.preycode == undefined) {
+                        //没有互动
+                        hudong_type = 0;
+                    }
+                    else if(this.user_data.preycode == "CHALLENGE") {
+                        //挑战
+                        hudong_type = 1;
+                    } 
+                    else if(this.user_data.preycode == "FOLLOW") {
+                        //跟随
+                        hudong_type = 2;
+                    }
+                    else if(this.user_data.preycode == "FOLLOWED") {
+                        //被跟随
+                        hudong_type = 3;
+                    }
+                    else if(this.user_data.preycode == "MECHANISM") {
+                        //大户获取的机构猎物
+                        hudong_type = 4;
+                    }
+                    else if(this.user_data.preycode == "BIGRETAIL") {
+                        //机构获取的散户猎物
+                        hudong_type = 5;
+                    }
                 }
-                else if(this.user_data.preycode == "CHALLENGE") {
-                    //挑战
-                    hudong_type = 1;
-                } 
-                else if(this.user_data.preycode == "FOLLOW") {
-                    //跟随
-                    hudong_type = 2;
-                }
-                else if(this.user_data.preycode == "FOLLOWED") {
-                    //被跟随
-                    hudong_type = 3;
-                }
-                else if(this.user_data.preycode == "MECHANISM") {
-                    //大户获取的机构猎物
-                    hudong_type = 4;
-                }
-                else if(this.user_data.preycode == "BIGRETAIL") {
-                    //机构获取的散户猎物
-                    hudong_type = 5;
-                }
+               
                 
                 //判断显示
                 if(hudong_type==3){

@@ -10,9 +10,9 @@ class UserData {
     static User_DengJi: number = 0;
     static User_JiFen: number = 0;
     static User_Detail: string = "";
-    static User_Code: string;
+    static User_Code: string = "code=SHANGZZS";
     static Other_UserId: string;
-    static User_Id: string = "";
+    static User_Id: string = "184d77be4b63426e994f3f98be6c4221";
     
     //数据赋值1f01f806ee40469c825a71ca2f0453f8
     static DengJi_Name: string[] = ["业余选手","职业一段","职业二段","职业三段","职业四段","职业五段","职业六段","职业七段","职业八段","职业九段"];

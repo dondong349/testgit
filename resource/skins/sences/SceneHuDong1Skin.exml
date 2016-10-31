@@ -31,9 +31,9 @@
 				<e:Image source="back_heise_png" x="0" y="0" scale9Grid="9,7,12,16" width="604" height="286" alpha="0.5"/>
 				<e:Group x="68.48484848484848" y="39.01515151515153">
 					<e:Label text="      机构可以猎杀在线散户（系统随机分配）" x="0" y="-11" size="22" fontFamily="微软雅黑" height="27"/>
-					<e:Label y="59" height="92" text="      如果猎物产生损失，猎手将按对方损失的1/10作为收益加成。造成爆仓，将获得额外积分奖励。" fontFamily="微软雅黑" size="22" x="0" width="467" lineSpacing="10"/>
-					<e:Label y="160" height="58" text="      如果猎物产生盈利，猎手将按对方盈利的1/10进行收益减成。" fontFamily="微软雅黑" lineSpacing="10" width="467" size="22" x="0"/>
-					<e:Label y="24" height="27" text="      少数大户可以围杀机构（名额先到先得）" fontFamily="微软雅黑" size="22" x="0"/>
+					<e:Label y="59" height="92" text="      当猎物产生亏损，猎手获得其亏损率的1/10作为收益加成；当猎物产生盈利，猎手则按该比例减成；猎物爆仓，猎手获额外积分奖励" fontFamily="微软雅黑" size="22" x="0" width="467" lineSpacing="10"/>
+					<e:Label y="160" height="58" text="      散户可单方面与系统随机分配的玩家比拼收益率，根据胜负获得积分奖惩" fontFamily="微软雅黑" lineSpacing="10" width="467" size="22" x="0"/>
+					<e:Label y="24" height="27" text="      大户可围杀一个机构（名额先到先得）" fontFamily="微软雅黑" size="22" x="0"/>
 				</e:Group>
 			</e:Group>
 			<e:Button id="btn_lingqu" label="按钮" y="370.9848484848485" x="140">
